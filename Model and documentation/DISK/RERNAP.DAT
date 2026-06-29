@@ -1,0 +1,92 @@
+********************************************************************
+* RERNAP.DAT                                                       *
+* Input file for BRASN1_1.FOR                                      *
+* For excecution of reruns                                         *
+* Habekotte, 1996. Description, parameterization and listing of    *
+* LINTUL-BRASNAP 1.1, Quantitative Approaches in Systems Analysis  *
+* AB-DLO/PE, Wageningen, 66 pp.                                    *
+********************************************************************
+
+**** Experimental data for model evaluation ************************
+* Wageningen, 1988-1989
+* variety: Jet neuf
+* exp1, first treatment: low plant density (lpd)
+* Habekotte and Smid, 1992
+********************************************************************
+
+********************************************************************
+* initial conditions                                               *
+********************************************************************
+*---Year, country, weather station, data number
+CNTR  = 'NLD'        ! ,,
+ISTN  = 1            ! ,,
+IYEAR = 1988         ! see: timnap.dat
+
+*---Date of sowing and startday for integration of development (23-8)
+*   (experiment 1, tr. 1, Habekotte and Smid, 1992):
+SWD   = 236.
+
+*---Startday for integration of total dry matter in (13-3) in spring
+*   (experiment 1, tr. 1, Habekotte and Smid, 1992):
+STIM  = 438.
+
+*---Initial value of leaf area index (lai) in spring at time = stim;
+*   calculated through (tdw*0.57*0.00981 (Habekotte & Smid, 1992):
+*   (experiment 1, tr. 1, Habekotte and Smid, 1992):
+SLAI  = 0.787
+
+*---Initial value of total dry matter (g/m2) in spring
+*   (experiment 1, tr. 1, Habekotte and Smid, 1992):
+TDW = 142.3
+
+*******************************************************************
+* Experimental data of total crop dry matter during the growing   *
+* season that can be used for evaluation of the model             *
+*******************************************************************
+*---Total dry matter (g m-2, GCU) at harvest dates, 
+*   including dead leaves 
+TDW_OBS =
+1989.,  72.,  142.3,
+1989.,  87.,  172.1,
+1989., 100.,  306.9,
+1989., 114.,  417.6,
+1989., 128.,  635.1,
+1989., 142.,  915.8,
+1989., 156., 1224.7,
+1989., 170., 1513.1,
+1989., 184., 1561.6,
+1989., 191., 1485.3
+
+**** Experimental data for calibration *****************************
+* Wageningen, 1989-1990
+* variety: Jet neuf
+* exp2, first treatment: low seed rate (lsr)
+* Habekotte and Smid, 1992
+********************************************************************
+**********************
+* initial conditions *
+**********************
+*---year, country, weather station, data number
+CNTR   = 'NLD'
+ISTN   = 1
+IYEAR  = 1989
+
+SWD    = 236.
+STIM   = 446.
+SLAI   = 3.32
+TDW    = 445.9
+
+*******************************************************************
+* Experimental data of total crop dry matter during the growing   *
+* season that can be used for evaluation of the model             *
+*******************************************************************
+*---Total dry matter (g m-2, GCU) at harvest dates, 
+*   including dead leaves 
+TDW_OBS =
+1990.,  81.,  445.9,
+1990., 108.,  864.8,
+1990., 121., 1052.9,
+1990., 134., 1154.1,
+1990., 148., 1471.0,
+1990., 169., 1806.5,
+1990., 190., 1877.5

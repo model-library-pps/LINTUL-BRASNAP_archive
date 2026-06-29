@@ -1,0 +1,21 @@
+*----------------------------------------------------------------------*
+* File names to be used by FSE 2.1a                                    *
+*                                                                      *
+* The input files (except FILEIR) may may used in reruns.              *
+* Up to five input data files may be used (FILEI1-5)                   *
+*----------------------------------------------------------------------*
+ 
+  STRUN  = 0
+*  ENDRUN = 1
+  ENDRUN = 2
+
+  FILEON = 'BRASNAP.OUT'       ! Normal output file
+  FILEOL = 'BRASN1_2.LOG'      ! Log file
+  FILEIR = 'RERNAP.DAT'        ! Reruns file
+  FILEIT = 'TIMNAP.DAT'        ! File with timer data
+  FILEI1 = 'PLANAP.DAT'        ! First input data file
+ 
+* FILEI2 = ' '             ! Second input data file (not used)
+* FILEI3 = ' '             ! Third input data file (not used)
+* FILEI4 = ' '             ! Fourth input data file (not used)
+* FILEI5 = ' '             ! Fifth input data file (not used)

@@ -1,0 +1,53 @@
+********************************************************************
+* RERNAP.DAT                                                       *
+* Input file for BRASN1_1.FOR                                      *
+* For excecution of reruns                                         *
+* Habekotte, 1996. Description, parameterization and listing of    *
+* LINTUL-BRASNAP 1.1, Quantitative Approaches in Systems Analysis  *
+* AB-DLO/PE, Wageningen, 66 pp.                                    *
+********************************************************************
+
+**** Experimental data for model evaluation ************************
+* Wageningen, 1988-1989
+* variety: Jet neuf
+* exp1, first treatment: low plant density (lpd)
+* Habekotte and Smid, 1992
+********************************************************************
+
+********************************************************************
+* initial conditions                                               *
+********************************************************************
+*---Year, country, weather station, data number
+CNTR  = 'NLD'        ! ,,
+ISTN  = 1            ! ,,
+IYEAR = 1988         ! see: timnap.dat
+
+*---Date of sowing and startday for integration of development (23-8)
+*   (experiment 1, tr. 1, Habekotte and Smid, 1992):
+SWD   = 236.
+
+*---Startday for integration of total dry matter in (13-3) in spring
+*   (experiment 1, tr. 1, Habekotte and Smid, 1992):
+STIM  = 438.
+
+*---Initial value of leaf area index (lai) in spring at time = stim;
+*   calculated through (tdw*0.57*0.00981 (Habekotte & Smid, 1992):
+*   (experiment 1, tr. 1, Habekotte and Smid, 1992):
+SLAI  = 0.787
+
+*---Initial value of total dry matter (g/m2) in spring
+*   (experiment 1, tr. 1, Habekotte and Smid, 1992):
+TDW = 142.3
+
+**********************
+* initial conditions *
+**********************
+*---year, country, weather station, data number
+CNTR   = 'NLD'
+ISTN   = 1
+IYEAR  = 1989
+
+SWD    = 236.
+STIM   = 446.
+SLAI   = 3.32
+TDW    = 445.9

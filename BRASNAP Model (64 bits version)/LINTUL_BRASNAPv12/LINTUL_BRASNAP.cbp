@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LINTUL_BRASNAP" />
+		<Option pch_mode="2" />
+		<Option compiler="gfortran" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/LINTUL_BRASNAP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gfortran" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/LINTUL_BRASNAP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gfortran" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="BRASN1_1.FOR">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="FSE21A.FOR">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="LIBS/TTUTIL/TTUTIL_manual.pdf" />
+		<Unit filename="LIBS/TTUTIL/aux_routines.for">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="LIBS/TTUTIL/lextokin.inc" />
+		<Unit filename="LIBS/TTUTIL/rddata.inc" />
+		<Unit filename="LIBS/TTUTIL/rddecinf.inc" />
+		<Unit filename="LIBS/TTUTIL/rderrinf.inc" />
+		<Unit filename="LIBS/TTUTIL/rdfilinf.inc" />
+		<Unit filename="LIBS/TTUTIL/rdjdat.gin" />
+		<Unit filename="LIBS/TTUTIL/rdjdec.gin" />
+		<Unit filename="LIBS/TTUTIL/rdmachin.gin" />
+		<Unit filename="LIBS/TTUTIL/rdmachin.inc" />
+		<Unit filename="LIBS/TTUTIL/rdndat.gin" />
+		<Unit filename="LIBS/TTUTIL/rdndec.gin" />
+		<Unit filename="LIBS/TTUTIL/rdrecinf.inc" />
+		<Unit filename="LIBS/TTUTIL/rdstainf.inc" />
+		<Unit filename="LIBS/TTUTIL/rdtblinf.inc" />
+		<Unit filename="LIBS/TTUTIL/recread.inc" />
+		<Unit filename="LIBS/TTUTIL/ttutil.for">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="LIBS/TTUTIL/wr_sys.inc" />
+		<Unit filename="LIBS/WEATHER/weather.for">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="LIBS/WEATHER/wscfil.inc" />
+		<Unit filename="LIBS/WEATHER/wsnbuf.inc" />
+		<Unit filename="LIBS/WEATHER/wsnfil.inc" />
+		<Unit filename="REST.FOR">
+			<Option weight="0" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

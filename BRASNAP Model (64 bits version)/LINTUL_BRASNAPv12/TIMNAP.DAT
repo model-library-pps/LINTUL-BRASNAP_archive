@@ -1,0 +1,66 @@
+********************************************************************
+* TIMNAP.DAT                                                       *
+* Input file for BRASN1_1.FOR                                      *
+* Habekotte, 1996. Description, parameterization and listing of    *
+* LINTUL-BRASNAP 1.1, Quantitative Approaches in Systems Analysis  *
+* AB-DLO/PE, Wageningen, XX pp.                                    *
+********************************************************************
+********************************************************************
+* Name of weather directory:
+********************************************************************
+WTRDIR = 'WEATHER\'
+
+CNTR = 'NLD'      ! Nederland (NLD), Engeland (GBR)
+ISTN = 1          ! Station number of weather data (1: Wageningen) 
+IYEAR  = 1988     ! Year of weather data
+
+********************************************************************
+* Time variables and output file options
+********************************************************************
+
+STTIME = 220.     ! Start day of simulation: it has to be a day
+                  ! in autumn before the sowing date (SWD) and after
+                  ! the day of expected maturation; the fixed
+                  ! parameter value 'fix' has to be equal to sttime
+                  ! The default value is 220.
+FINTIM = 620.     ! Finish time of simulation
+PRDEL  = 1.       ! Time between consecutive outputs to file
+DELT   = 1.       ! Time step of integration
+IPFORM = 4        ! Format of output file (4 = normal table, 
+                  ! 5 = Tab-delimited (for Excel), 6=TTPLOT format)
+DELTMP = 'N'      ! Switch variable what should be done with the 
+                  ! temporary output files (0 = do not delete,
+                  ! 1 = delete)
+COPINF = 'N'      ! Switch variable whether to copy the input files
+                  ! to the output file ('N' = do not copy,
+                  ! 'Y' = copy)
+IFLAG  = 1101     ! Indicates where weather error and warnings
+                  ! go (1101 means errors and warnings to log
+                  ! file, errors to screen, see FSE manual)
+                  ! The string array PRSEL contains the output 
+                  ! variables for which formatted tables have to be 
+                  ! made. One or more times there is a
+                  ! series of variable names terminated by the word 
+                  ! <TABLE>.
+                  ! The translator writes the variables in each 
+                  ! PRINT statement to
+* PRSEL =         ! a separate table.
+* 'DAYL  ',
+* 'RDPOT ',
+* 'RDSUM ',
+* 'RDACT ',
+*          '<TABLE>'
+
+**** List of output-day data for which output is requested
+*    0. = no output data
+* IOBSD = 
+*1989,  72,
+*1989,  87,
+*1989, 100,
+*1989, 114,
+*1989, 128,
+*1989, 142,
+*1989, 156,
+*1989, 170,
+*1989, 184,
+*1989, 191
